@@ -24,7 +24,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "yi.png"
+  avatar           : "profile.png"
   name             : "Yi Zhang"
   pronouns         : # example: "she/her"  
   bio              : "yi.zhang.16@Warwick.ac.uk  yizhyi12@gmail.com"
