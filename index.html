@@ -74,7 +74,7 @@
       border-bottom: 1px solid #ddd;
       margin-bottom: 30px;
       display: flex;
-      gap: 15px;
+      gap: 20px;
       justify-content: center;
       z-index: 10;
     }
@@ -85,45 +85,6 @@
     }
     .main nav a:hover {
       color: #007acc;
-    }
-
-    /* -------- Card Style for Items -------- */
-    .card-container {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    .card {
-      border: 1px solid #ddd;
-      padding: 15px 20px;
-      border-radius: 8px;
-      background: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    .card h3 {
-      margin: 0 0 5px;
-      font-size: 1.1em;
-      color: #007acc;
-    }
-    .card p, .card a {
-      margin: 0;
-      font-size: 0.95em;
-      color: #333;
-      text-decoration: none;
-    }
-    .card a:hover {
-      text-decoration: underline;
-      color: #007acc;
-    }
-
-    .year-group {
-      margin-bottom: 25px;
-    }
-    .year-group h2 {
-      font-size: 1.3em;
-      margin-bottom: 10px;
-      border-left: 4px solid #007acc;
-      padding-left: 10px;
     }
 
     /* Responsive */
@@ -173,76 +134,62 @@
     <!-- Sections -->
     <section id="about">
       <h1>About Me</h1>
-      <p>Yi Zhang (高鸿成) is a Ph.D. student at University of Warwick. Research focus: probabilistic robustness, adversarial training, trustworthy ML.</p>
-      <p>Seeking PhD opportunities for Fall 2026. Please contact me if interested!</p>
+      <p>Yi Zhang (张艺) is a Ph.D. student at University of Warwick. Research focus: probabilistic robustness, adversarial training, trustworthy ML.</p>
+      <p>!</p>
     </section>
 
     <section id="news">
       <h2>News</h2>
-      <div class="card-container">
-        <div class="year-group">
-          <h2>2025</h2>
-          <div class="card">Two papers accepted to NeurIPS'25 (one Oral)</div>
-          <div class="card">One paper accepted to ICCV 2025</div>
-          <div class="card">Invited as Senior PC Member for CIKM'25</div>
-        </div>
-        <div class="year-group">
-          <h2>2024</h2>
-          <div class="card">Selected as NeurIPS 2024 Top Reviewer</div>
-          <div class="card">Three papers accepted to NeurIPS 2024</div>
-        </div>
-      </div>
+      <ul>
+        <li>2025.09: Two papers accepted to NeurIPS'25 (one Oral)</li>
+        <li>2025.06: One paper accepted to ICCV 2025</li>
+        <li>2025.06: Invited as Senior PC Member for CIKM'25</li>
+        <!-- Add more news items -->
+      </ul>
     </section>
 
     <section id="preprints">
       <h2>Preprints</h2>
-      <div class="card-container">
-        <div class="card"><a href="#">GuardReasoner: Towards Reasoning-based LLM Safeguards</a></div>
-        <div class="card"><a href="#">StruEdit: Structured Outputs Enable Fast Knowledge Editing</a></div>
-        <div class="card"><a href="#">Evaluating the Robustness of Text-to-image Diffusion Models</a></div>
-      </div>
+      <ul>
+        <li>GuardReasoner: Towards Reasoning-based LLM Safeguards [Paper]</li>
+        <li>StruEdit: Structured Outputs Enable Fast Knowledge Editing [Paper]</li>
+        <!-- Add more preprints -->
+      </ul>
     </section>
 
     <section id="publications">
       <h2>Publications</h2>
-      <div class="card-container">
-        <div class="year-group">
-          <h2>2025</h2>
-          <div class="card"><a href="#">Meta-Unlearning on Diffusion Models (ICCV 2025)</a></div>
-          <div class="card"><a href="#">Spider 2.0: Evaluating LLMs on Enterprise Workflows (ICLR 2025)</a></div>
-        </div>
-        <div class="year-group">
-          <h2>2024</h2>
-          <div class="card"><a href="#">Leveraging Catastrophic Forgetting for Safe Diffusion Models (NeurIPS 2024)</a></div>
-          <div class="card"><a href="#">Token Merging for Training-Free Semantic Binding (NeurIPS 2024)</a></div>
-        </div>
-      </div>
+      <ul>
+        <li>Meta-Unlearning on Diffusion Models: Preventing Relearning Unlearned Concepts (ICCV 2025)</li>
+        <li>Spider 2.0: Evaluating language models on real-world enterprise workflows (ICLR 2025)</li>
+        <!-- Add more publications -->
+      </ul>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
-      <div class="card-container">
-        <div class="card">AT-PR Efficient Training</div>
-        <div class="card">NPPR Metric</div>
-        <div class="card">OpenAttack: Textual Adversarial Toolkit</div>
-      </div>
+      <ul>
+        <li>AT-PR Efficient Training</li>
+        <li>NPPR Metric</li>
+        <!-- Add more projects -->
+      </ul>
     </section>
 
     <section id="services">
       <h2>Academic Services</h2>
-      <div class="card-container">
-        <div class="card">NeurIPS 2025 - Senior PC</div>
-        <div class="card">CIKM 2025 - Senior PC</div>
-        <div class="card">Reviewer: ICML, ICCV, ACL, EMNLP...</div>
-      </div>
+      <ul>
+        <li>NeurIPS 2025 - Senior PC</li>
+        <li>CIKM 2025 - Senior PC</li>
+        <li>Reviewer: ICML, ICCV, ACL, EMNLP...</li>
+      </ul>
     </section>
 
     <section id="experience">
       <h2>Experience</h2>
-      <div class="card-container">
-        <div class="card">2018-2023: Undergraduate Student at Chongqing University</div>
-        <div class="card">2021-2023: Research Intern at THUNLP, Tsinghua University</div>
-      </div>
+      <ul>
+        <li>2018-2023: Undergraduate Student at Chongqing University</li>
+        <li>2021-2023: Research Intern at THUNLP, Tsinghua University</li>
+      </ul>
     </section>
 
   </div>
