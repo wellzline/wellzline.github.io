@@ -86,9 +86,16 @@
       color: #333;
       font-weight: 600;
     }
-    .main nav a:hover {
-      color: #007acc;
+    .main nav a {
+      text-decoration: none;
+      color: #000;          /* 默认黑色 */
+      font-weight: 600;
     }
+
+    .main nav a:hover {
+      color: #000;          /* 悬停时保持黑色 */
+    }
+
 
     /* Responsive */
     @media(max-width: 900px) {
