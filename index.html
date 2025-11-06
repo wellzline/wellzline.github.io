@@ -97,15 +97,30 @@
       font-weight: 600;
     }
     .main nav a {
-      text-decoration: none;
-      color: #000;          /* 默认黑色 */
-      font-weight: 600;
-      font-size: 18px; 
+        position: relative;        /* 必须相对定位，方便下划线定位 */
+        text-decoration: none;
+        color: #555;               /* 默认浅灰色 */
+        font-weight: 500;
+        font-size: 18px;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        padding-bottom: 4px;       /* 给下划线留出空间 */
     }
 
-    .main nav a:hover {
-      color: #000;          /* 悬停时保持黑色 */
+    .main nav a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;                  /* 初始宽度为 0 */
+        height: 2px;               /* 下划线厚度 */
+        background-color: #222;    /* 下划线颜色 */
+        transition: width 0.3s ease; /* 动态展开效果 */
     }
+
+    .main nav a:hover::after {
+        width: 100%;               /* 悬浮时下划线展开到整个文字宽度 */
+    }
+
 
 
     /* Responsive */
