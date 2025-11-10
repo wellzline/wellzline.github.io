@@ -150,6 +150,56 @@
         padding: 10px;
       }
     }
+
+    /* ----------------- Mobile Friendly Adjustments ----------------- */
+@media (max-width: 900px) {
+  /* 保持你已有的调整 */
+  body {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    padding: 15px 10px; /* 减小 padding 让内容更紧凑 */
+  }
+  .sidebar img {
+    width: 120px;      /* 缩小头像 */
+    margin: 30px auto 10px;
+  }
+  .sidebar p, .sidebar a {
+    margin: 4px 0;     /* 减小上下间距 */
+    font-size: 14px;   /* 手机字体稍小 */
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 20px 10px;  /* 减小 main padding */
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .main nav {
+    flex-wrap: wrap;     /* 导航多行显示 */
+    gap: 10px;
+  }
+  .main nav a {
+    font-size: 16px;    /* 导航字体适配手机 */
+    padding-bottom: 2px;
+  }
+
+  section h1 {
+    font-size: 20px;    /* 手机端标题稍小 */
+  }
+  section h2 {
+    font-size: 18px;
+  }
+  ul li {
+    font-size: 14px;    /* 手机端列表稍小 */
+  }
+}
+
   </style>
 </head>
 <body>
