@@ -60,11 +60,19 @@
     }
 
     /* -------- Main Content -------- */
-    .main {
+    /* .main {
       margin-left: 250px;
       padding: 60px 40px;
       max-width: 1000px;
-    }
+    } */
+     .main {
+        margin-left: 250px;
+        padding: 60px clamp(30px, 5vw, 80px);
+        max-width: clamp(900px, 80%, 1400px);
+        width: calc(100% - 250px);
+        box-sizing: border-box;
+      }
+
     section {
       margin-bottom: 60px;
     }
